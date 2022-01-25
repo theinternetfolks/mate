@@ -1,0 +1,15 @@
+import none from "./to-no-case";
+
+/**
+ * Convert a `string` to lower case from camel, slug, etc. Different that the
+ * usual `toLowerCase` in that it will try to break apart the input first.
+ *
+ * @param {String} string
+ * @return {String}
+ */
+
+function toLowerCase(string) {
+  return none(string).toLowerCase();
+}
+
+export default toLowerCase;
