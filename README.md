@@ -25,27 +25,27 @@ Install with yarn
 You could pass the separator, and it would determine it.
 
 ```javascript
-Mate.format("Hello {{name}}", { name:"Sameer" }, "{{}}")
-> Hello Sameer
+Mate.format("Hello {{name}}", { name:"Dolores" }, "{{}}")
+// "Hello Dolores"
 ```
 
 You can even pass numbers in, for formatting.
 
 ```javascript
-Mate.format("Hi, my name is {name} and I am {age} years old.", { name: "Gandalf", age: 24000 }, "{}")
-> Hi, my name is Gandalf and I am 24000 years old.
+Mate.format("Hi, my name is {name} and I am {age} years old.", { name: "Dolores", age: 24000 }, "{}")
+"Hi, my name is Dolores and I am 24000 years old."
 ```
 
 You could explicitly pass the start and end separator, if you're creative.
 
-```
-Mate.format("Hi, my name is {##name}}.", { name: "Gandalf" }, "{##", "}}")
-> Hi, my name is Gandalf.
+```javascript
+Mate.format("Hi, my name is {##name}}.", { name: "Dolores" }, "{##", "}}")
+"Hi, my name is Dolores."
 ```
 
-```
-Mate.format("Hi, my name is {#name#}.", { name: "Gandalf" }, "{#", "#}")
-> Hi, my name is Gandalf.
+```javascript
+Mate.format("Hi, my name is {#name#}.", { name: "Dolores" }, "{#", "#}")
+"Hi, my name is Dolores."
 ```
 
 **To Case**
