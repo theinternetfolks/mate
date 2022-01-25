@@ -1,11 +1,12 @@
 {
   "name": "@theinternetfolks/mate",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "Library for most frequent helper methods for Javascript.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "build:map": "tsc -d --declarationDir . --declarationMap --emitDeclarationOnly",
+    "build": "yarn compile && yarn build:map",
+    "compile": "tsc",
+    "build:map": "tsc -d --declarationDir ./dist --declarationMap --emitDeclarationOnly",
     "test": "mocha --ignore 'node_modules/**/*' -r ts-node/register --recursive --exit tests/**/*.ts",
     "test-coverage": "c8 yarn test && c8 report -r html"
   },
@@ -13,10 +14,7 @@
   "organization": "The Internet Folks",
   "repository": "https://github.com/theinternetfolks/mate",
   "files": [
-    "index.js",
-    "index.js.map",
-    "index.d.ts",
-    "index.d.ts.map",
+    "dist",
     "LICENSE",
     "package.json",
     "README.md"
@@ -37,7 +35,38 @@
     "access": "public"
   },
   "keywords": [
-    "node",
-    "helper"
+    "helper",
+    "string format",
+    "format string",
+    "format unicorn",
+    "camel case",
+    "camel case string",
+    "camel case string format",
+    "camel",
+    "camelcase",
+    "case",
+    "casing",
+    "lower",
+    "lowercase",
+    "lower case",
+    "pascal",
+    "pascalcase",
+    "pascal case",
+    "sentence",
+    "sentencecase",
+    "sentence case",
+    "slug",
+    "slugcase",
+    "slug case",
+    "snake",
+    "snakecase",
+    "snake case",
+    "string",
+    "title",
+    "titlecase",
+    "title case",
+    "upper",
+    "uppercase",
+    "upper case"
   ]
 }

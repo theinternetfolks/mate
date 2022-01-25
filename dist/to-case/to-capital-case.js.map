@@ -1,0 +1,1 @@
+{"version":3,"file":"to-capital-case.js","sourceRoot":"","sources":["../../src/to-case/to-capital-case.ts"],"names":[],"mappings":";;AAAA,iDAAoC;AAEpC;;;;;GAKG;AAEH,SAAS,aAAa,CAAC,MAAM;IAC3B,OAAO,IAAA,uBAAK,EAAC,MAAM,CAAC,CAAC,OAAO,CAC1B,aAAa,EACb,UAAU,OAAO,EAAE,QAAQ,EAAE,MAAM;QACjC,OAAO,QAAQ,GAAG,MAAM,CAAC,WAAW,EAAE,CAAC;IACzC,CAAC,CACF,CAAC;AACJ,CAAC;AAED,kBAAe,aAAa,CAAC"}

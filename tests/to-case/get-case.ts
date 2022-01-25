@@ -1,5 +1,7 @@
 import { assert } from "chai";
-import to from "../../src/to-case";
+import to from "../../src/to-case/cases";
+
+import getCase from "../../src/to-case/get-case";
 
 /**
  * Cases.
@@ -47,7 +49,7 @@ describe("to-case", function () {
 
 function determine(key) {
   it("should determine " + key + " case", function () {
-    assert(key == to.case(cases[key]));
+    assert(key == getCase(cases[key]));
   });
 }
 

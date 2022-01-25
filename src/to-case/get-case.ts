@@ -7,7 +7,7 @@ import cases from "./cases";
  * @return {String|Null}
  */
 
-function determineCase(string) {
+function getCase(string) {
   for (var key in cases) {
     if (key == "none") continue;
     var convert = cases[key];
@@ -16,4 +16,4 @@ function determineCase(string) {
   return null;
 }
 
-export default determineCase;
+export default getCase;

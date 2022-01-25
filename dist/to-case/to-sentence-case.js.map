@@ -1,0 +1,1 @@
+{"version":3,"file":"to-sentence-case.js","sourceRoot":"","sources":["../../src/to-case/to-sentence-case.ts"],"names":[],"mappings":";;AAAA,2CAAiC;AAEjC;;;;;GAKG;AAEH,SAAS,cAAc,CAAC,MAAM;IAC5B,OAAO,IAAA,oBAAK,EAAC,MAAM,CAAC;SACjB,OAAO,CAAC,QAAQ,EAAE,UAAU,MAAM;QACjC,OAAO,MAAM,CAAC,WAAW,EAAE,CAAC;IAC9B,CAAC,CAAC;SACD,IAAI,EAAE,CAAC;AACZ,CAAC;AAED,kBAAe,cAAc,CAAC"}
