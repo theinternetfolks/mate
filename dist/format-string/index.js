@@ -2,8 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var escape_regexp_component_1 = require("../libraries/escape-regexp-component");
 function formatString(text, replacements, start, end) {
+    if (!start && end)
+        end = undefined;
     if (!start)
-        return text;
+        start = "{}";
     if (typeof end === "undefined") {
         end = start.substring(start.length / 2);
         start = start.substring(0, start.length / 2);

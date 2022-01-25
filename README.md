@@ -22,6 +22,15 @@ Install with yarn
 
 **Format String**
 
+You can use it to replace template variables in a string, without the use of Javascript's template literals.
+
+By default the separtor is `{}`.
+
+```javascript
+Mate.format("Hello {name}", { name:"Dolores" })
+// "Hello Dolores"
+```
+
 You could pass the separator, and it would determine it.
 
 ```javascript
