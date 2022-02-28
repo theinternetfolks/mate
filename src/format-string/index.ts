@@ -58,14 +58,26 @@ function formatString(
 
   if (start === end) return text;
 
+  if (!start.replace(/\s/g, "").length || !end.replace(/\s/g, "").length) {
+    throw new Error(
+      "You cannot only use whitespace as a separator. Please include a character for specifying separators better."
+    );
+  }
+
   const startRegex = escapeRegex(start);
   const endRegex = escapeRegex(end);
 
   for (const arg in replacements) {
-    text = text.replace(
-      new RegExp(startRegex + arg + endRegex, "gi"),
-      replacements[arg].toString()
-    );
+    if (
+      typeof replacements[arg] === "string" ||
+      typeof replacements[arg] === "boolean" ||
+      typeof replacements[arg] === "number"
+    ) {
+      text = text.replace(
+        new RegExp(startRegex + arg + endRegex, "gi"),
+        replacements[arg].toString()
+      );
+    }
   }
 
   return text;
