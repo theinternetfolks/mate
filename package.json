@@ -1,6 +1,6 @@
 {
   "name": "@theinternetfolks/mate",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Library for most frequent helper methods for Javascript.",
   "main": "dist/index.js",
   "scripts": {
@@ -15,6 +15,7 @@
   "repository": "https://github.com/theinternetfolks/mate",
   "files": [
     "dist",
+    "src",
     "LICENSE",
     "package.json",
     "README.md"
